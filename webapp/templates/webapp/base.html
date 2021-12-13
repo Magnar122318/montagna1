@@ -1,0 +1,109 @@
+<html>
+
+<head>
+
+  {% load static %}
+
+    <!-- Bootstrap -->
+    <link href="{% static 'webapp/vendor/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+     <!-- Fonts -->
+    
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+     
+
+    <!-- Styles -->
+    <link href="{% static 'webapp/css/gestion.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      
+        <span class="site-heading-lower" Style= "font-family: 'Roboto Slab';">MONTAGNA</span>
+      </h1>
+
+
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav" style="background: rgba(197, 146, 5, 0.8);">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">MONTAGNA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse"  id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item {% if request.path == '/' %} active{% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}" Style= "font-family: 'Roboto Slab';">Inicio</a>
+          </li>
+          <li class="nav-item {% if request.path == '/servicios/' %} active{% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Servicios' %}" Style= "font-family: 'Roboto Slab';">Planes</a>
+          </li>
+          <li class="nav-item {% if request.path == '/tienda/' %} active{% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Tienda' %}" Style= "font-family: 'Roboto Slab';">Brochure</a>
+          </li>
+          <li class="nav-item {% if request.path == '/contacto/' %} active{% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}" Style= "font-family: 'Roboto Slab';">Contacto</a>
+          </li>
+          <li class="nav-item {% if request.path == '/nosotros/' %} active{% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'nosotros' %}" Style= "font-family: 'Roboto Slab';">Nosotros</a>
+          </li>
+          <li class="nav-item {% if request.path|slice:':6' == '/blog/ ' %} active{% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Blog' %}" Style= "font-family: 'Roboto Slab';">Blog</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+   {% block content %}
+
+  {% endblock %}
+
+    <!-- Footer -->
+    <footer class="footer text-faded text-center py-5" style="background: rgba(197, 146, 5, 0.8);">
+      <div class="container" >
+        <p class="m-0">
+	        <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	        <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	        <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	    </p>
+        <p class="m-0 mbt">
+        	<a href="sample.html" class="link">Política de privacidad</a> ·
+        	<a href="sample.html" class="link">Aviso legal</a> ·
+        	<a href="https://www.linkedin.com/company/montagna-services-and-consulting/?viewAsMember=truel" class="link">Linkedin</a>
+		</p>
+        <p class="m-0 mbt1">&copy; MONTAGNA</p>
+      </div>
+	</footer>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'webapp/vendor/jquery/jquery.min.js '%}"></script>
+    <script src="{% static 'webapp/vendor/bootstrap/js/bootstrap.bundle.min.js '%}"></script>
+
+</body>
+
+
+</html>

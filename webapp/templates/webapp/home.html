@@ -1,0 +1,73 @@
+{% extends "webapp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+   <!-- Heading -->
+   <section class="page-section clearfix" >
+    <div class="container" >
+      <div class="intro" >
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{%static 'webapp/img/bg_main.png'%}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded" style="background: rgba(197, 146, 5, 0.8);">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper" Style= "font-family: 'Roboto Slab';">MONTAGNA</span>
+            <span class="section-heading-lower" Style= "font-family: 'Roboto Slab';">MONTAGNA</span>
+          </h2>
+          <p class="mb-3" Style= "font-family: 'Roboto Slab';">Área encarga de planificar el rumbo de la empresa, identificando el problema que quiere resolver, clientes a los que se enfoca, además del propósito, misión, visión y valores de la compañía. 
+            Además debe evaluar la estrategia de diferenciación con la que saldrá al mercado y el posicionamiento (cómo nos ven, logo, marca) que desea tener. 
+            
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+    <!-- Message -->
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded" style="background: rgba(197, 146, 5, 0.8);">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper"></span>
+                <span class="section-heading-lower" Style= "font-family: 'Roboto Slab';">Misión</span>
+              </h2>
+              <p class="mb-0" Style= "font-family: 'Roboto Slab';">Ayudar a las pequeñas y medianas empresas a gestionar y controlar sus procesos internos adaptándonos a su realidad y facilitando la toma de decisiones con orden y agilidad</p>
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper"></span>
+                <span class="section-heading-lower">Visión</span>
+              </h2>
+              <p class="mb-0">Ser reconocidos como una consultora de soporte en sistemas de control de gestión para PYMES y MYPES a nivel local y regional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{%static 'webapp/img/equiparq.png'%}" class="d-block w-100" alt="..." style="height: 500px;">
+        </div>
+        <div class="carousel-item">
+          <img src="{%static 'webapp/img/principal.jpg'%}" class="d-block w-100" alt="..." style="height: 500px;">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." style="height: 500px;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+    </div>
+
+
+{% endblock %}
