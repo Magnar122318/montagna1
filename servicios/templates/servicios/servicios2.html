@@ -1,0 +1,40 @@
+{% extends "webapp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="page-section clearfix">
+
+  <div class="card-group" >
+
+    {% for servicio in servicios %}
+    
+    <div class="col-3 md-6">
+      <div class="card -md-6 p-4" style="width: 18rem;">
+
+        <img src="{{servicio.imagen.url}}" class="picture" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{servicio.titulo}}</h5>
+          <p class="card-text">{{servicio.contenido}}</p>
+          <br>
+          <br>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  
+
+
+
+    {% endfor %}
+  </div>
+
+  
+</section>
+
+{% endblock %}

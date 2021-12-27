@@ -3,38 +3,57 @@
 {% load static %}
 
 {% block content %}
-
 <section class="page-section clearfix">
-
-  <div class="card-group" style="background: rgba(197, 146, 5, 0.8);">
-
-    {% for servicio in servicios %}
-    
-    <div class="col-3 md-6">
-      <div class="card -md-6 p-4" style="width: 18rem;">
-
-        <img src="{{servicio.imagen.url}}" class="picture" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{servicio.titulo}}</h5>
-          <p class="card-text">{{servicio.contenido}}</p>
-          <br>
-          <br>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-
-        </div>
-
-
-
-      </div>
-    </div>
-  
-
-
-
-    {% endfor %}
-  </div>
-
-  
+  <div class="container">
+  <table class="table">
+    <thead class="contenedorFormulario" >
+      <tr>
+        <th scope="col"></th>
+        <th scope="col" style="color:snow;" ><p class="h1">BASIC</p></th>
+        <th scope="col" style="color:snow;"><p class="h1">STANDAR</p></th>
+        <th scope="col" style="color:snow;"><p class="h1">FULL</p></th>
+        <th scope="col" style="color:snow;"><p class="h1">PREMIUN</p></th>
+      </tr>
+    </thead>
+    <tbody class="p-3 mb-2 bg-light ">
+      <tr>
+        <th scope="row">Desarrollo</th>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Soporte</th>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Licencias</th>
+        <td >3 MOD</td>
+        <td>4 MOD</td>
+        <td >6 MOD</td>
+        <td >6 MOD</td>
+      </tr>
+      <tr>
+        <th scope="row">Power BI</th>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Consultoria </th>
+        <td><i class="fas fa-times" style="color:red;"></i></td>
+        <td><i class="fas fa-times" style="color:red;"></i></td>
+        <td><i class="fas fa-times" style="color:red;"></i></td>
+        <td><i class="fas fa-check" style="color:green;"></i></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 </section>
-
 {% endblock %}
+<i class="fas fa-times"></i>

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Braxton';
+    font-family: 'Nordic';
     background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/logo4.png");
     background-attachment: fixed;
     background-position: center;
@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Braxton';
+  font-family: 'Nordic';
 }
 
 p {
@@ -28,7 +28,7 @@ p {
   margin-bottom: 5rem;
   text-transform: uppercase;
   line-height: 1;
-  font-family: 'Braxton';
+  font-family: 'Nordic';
 }
 
 .site-heading .site-heading-upper {
@@ -78,49 +78,6 @@ p {
 .bg-faded {
   background-color: rgba(255, 255, 255, 0.85);
 }
-
-#mainNav {
-  background-color: rgba(197, 146, 5, 0.8);
-  font-family: 'Braxton';
-}
-
-#mainNav .navbar-brand {
-  color: #ffffff;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 800;
-}
-
-#mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-@media (min-width: 992px) {
-  #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 0.9rem;
-  }
-  #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 0.4);
-    text-decoration: underline;
-  }
-  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-}
-
-.btn-xl {
-  font-weight: 700;
-  font-size: 0.8rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .intro {
   position: relative;
 }
@@ -134,7 +91,7 @@ p {
     left: 600;
     width: 60%;
     margin-top: 3rem;
-    background-color: rgba(16, 110, 218, 0.8);
+    background-color: rgba(243, 211, 66, 0.8);
     color: cornsilk;
     position: absolute;
   }
@@ -162,7 +119,7 @@ p {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(16, 110, 218, 0.8);
+  background-color: rgba(148, 245, 83, 0.8);
   color: cornsilk;
 }
 
@@ -229,14 +186,11 @@ p {
 }
 
 .footer {
-   background-color:  rgba(16, 110, 218, 0.8);
+   background-color:  rgba(107, 218, 16, 0.8);
 }
 
 
 
-.btn {
-  box-shadow: 0px 3px 3px 0px  rgba(16, 110, 218, 0.8);
-}
 
 
 
@@ -291,7 +245,7 @@ text-decoration: underline;
 }
 
 .contenedorFormulario{
- background:  rgba(16, 110, 218, 0.8);
+ background:  rgba(243, 211, 66, 0.8);
  width: 50%;
  margin: 10px auto;
  border-radius: 5px;
@@ -310,9 +264,75 @@ text-decoration: underline;
   justify-content: space-between;
 }
 
-.card{
-  flex: 1 1 21rem;
-  background: white;
-  margin: 10px 20px;
-  box-shadow: 0 0 15px rgba(47, 23, 15, 0.65);
-}
+
+.dropdown-menu {
+    margin-top: 0;
+  }
+  .myaccordion {
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+  }
+   
+  .myaccordion .card,
+  .myaccordion .card:last-child .card-header {
+    border: none;
+  }
+   
+  .myaccordion .card-header {
+    border-bottom-color: #EDEFF0;
+    background: transparent;
+  }
+   
+  .myaccordion .fa-stack {
+    font-size: 18px;
+  }
+   
+  .myaccordion .btn {
+    width: 100%;
+    font-weight: bold;
+    color: #004987;
+    padding: 0;
+  }
+   
+  .myaccordion .btn-link:hover,
+  .myaccordion .btn-link:focus {
+    text-decoration: none;
+  }
+   
+  .myaccordion li + li {
+    margin-top: 10px;
+  }
+  
+#mainNav {
+    background-color: rgba(148, 245, 83, 0.8);
+    font-family: 'Braxton';
+  }
+  
+  #mainNav .navbar-brand {
+    color: #ffffff;
+  }
+  
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(219, 219, 219, 0.7);
+    font-weight: 800;
+  }
+  
+  #mainNav .navbar-nav .nav-item.active .nav-link {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  @media (min-width: 992px) {
+    #mainNav .navbar-nav .nav-item .nav-link {
+      font-size: 0.9rem;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link:hover {
+      color: rgba(255, 255, 255, 0.4);
+      text-decoration: underline;
+    }
+    #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
