@@ -3,15 +3,71 @@
 {% load static %}
 
 {% block content %}
-<br>
 <section class="page-section clearfix" >
-    <div class="container" >
-      <div class="intro" >
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{%static 'webapp/img/brochure.png'%}" alt="">
+  <h1 style="color:white;">Administracion</h1>
+  <nav class="navbar navbar-light" style="background-color: rgba(65, 107, 37, 0.89);">
+    <form class="container-fluid justify-content-start">
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'planes' %}" style="color:white;">Planillas</a>
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'firma_electronica' %}" style="color:white;">Firma electronica</a>
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'Evaluacion' %}" style="color:white;">Evaluación y Desempeño</a>
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'Climaorganizacional' %}" style="color:white;">Selección y Capacitacion</a>
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'SeleccionyCapacitacion' %}" style="color:white;">Clima organizacional</a>
+      
+    </form>
+   </nav>
+
+</section>
+<section class="page-section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper"></span>
+            <table class="table">
+              <thead>
+                <tr class="table-warning">
+                  <th scope="col">General</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-warning">
+                  <th scope="row"><i class="fas fa-check" style="color:green;"></i></th>
+                  <td>Permite el registro de condiciones de pago.</td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row"><i class="fas fa-check" style="color:green;"></i></th>
+                  <td>Permite el registro de tipo de cambio de soles a dólares el cuál se actualiza automáticamente a través de la página web de la SUNAT.
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row"><i class="fas fa-check" style="color:green;"></i></th>
+                  <td colspan="2">Permite definir de plazos de entrega.
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row"><i class="fas fa-check" style="color:green;"></i></th>
+                  <td colspan="2">Permite el registro de empleados, los mismos que adquirirán roles de responsables en los diferentes procesos del sistema.
+
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row" style="center"><i class="fas fa-check" style="color:green;"></i></th>
+                  <td colspan="2">Permite registrar diferentes series de documentos pre-impresos.
+
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row"><i class="fas fa-check" style="color:green;"></i></th>
+                  <td colspan="2">Permite registrar diferentes tipos de documentos externos (Recibos de luz, Facturas de publicidad, etc.) los que luego se vinculan a una cuenta contable lo que facilita el registro contable de las comprobantes de los proveedores.
+
+                  </td>
+                </tr>
+              </tbody>
+            </table></div>
       </div>
     </div>
-  </section>
-  <br>
-
+  </div>
+</section>
   
 {% endblock %}

@@ -5,6 +5,10 @@ def brochure(request):
 
     return render(request, "brochure/brochure.html")
 
+def administracion(request):
+
+    return render(request, "brochure/administracion.html")
+
 def administracionplanes(request):
 
     return render(request, "brochure/administracion/planes.html")
