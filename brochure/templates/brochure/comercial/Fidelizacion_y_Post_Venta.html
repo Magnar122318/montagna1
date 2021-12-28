@@ -1,0 +1,23 @@
+{% extends "webapp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+<section class="page-section clearfix" >
+    <h1 style="color:white;">Comercial</h1>
+    <nav class="navbar navbar-light" style="background-color: rgba(65, 107, 37, 0.89);">
+      <form class="container-fluid justify-content-start">
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Cotizaciones' %}" style="color:white;">Cotizaciones</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'CMR' %}" style="color:white;">Gestion de clientes (CMR)</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'prospección_de_Clientes' %}" style="color:white;">Prospección de Clientes</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Fidelizacion_y_Post_Venta' %}" style="color:white;">Fidelizacion y Post Venta</a>             
+      </form>
+     </nav>
+  
+  </section>
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "webapp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+<section class="page-section clearfix" >
+    <h1 style="color:white;">Logistica</h1>
+    <nav class="navbar navbar-light" style="background-color: rgba(65, 107, 37, 0.89);">
+      <form class="container-fluid justify-content-start">
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Solicitudes_por_pedido' %}" style="color:white;">Solicitudes por pedido</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Inventarios' %}" style="color:white;">Inventarios</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Bodegas' %}" style="color:white;">Bodegas</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Repuestos' %}" style="color:white;">Respuetos, insumos</a>
+                          
+      </form>
+     </nav>
+  
+  </section>
+{% endblock %}

@@ -70,29 +70,29 @@
                       
                     </div></li>
                   <li><button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                    <a class="nav-link dropdown" >Finanzas</a>
+                    <a class="nav-link dropdown" href="{% url 'finanzas' %}" >Finanzas</a>
                        
                       </button>
                     <div id="collapse3" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
                         <ul>
-                          <li>Facturacion</li>
-                          <li>Cuenta a pagar</li>
-                          <li>Cuentas por cobrar</li>
-                          <li>Reortes faltantes</li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'facturacion' %}" Style= "font-family: 'Roboto Slab';">Facturacion</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Cuenta_a_pagar' %}" Style= "font-family: 'Roboto Slab';">Cuenta a pagar</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Cuentas_por_cobrar' %}" Style= "font-family: 'Roboto Slab';">Cuentas por cobrar</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Reportes_faltante' %}" Style= "font-family: 'Roboto Slab';">Reortes faltantes</a></li>
                           
                         </ul>
                       
                     </div></li>
                   <li><button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                    <a class="nav-link dropdown" >Logistica</a>
+                    <a class="nav-link dropdown" href="{% url 'logistica' %}" >Logistica</a>
                         
                       </button>
                     <div id="collapse4" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
                         <ul>
-                          <li>Solicitudes por pedido</li>
-                          <li>Inventarios</li>
-                          <li>Bodegas</li>
-                          <li>Respuetos, insumos</li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Solicitudes_por_pedido' %}" Style= "font-family: 'Roboto Slab';">Solicitudes por pedido</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Inventarios' %}" Style= "font-family: 'Roboto Slab';">Inventarios</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Bodegas' %}" Style= "font-family: 'Roboto Slab';">Bodegas</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Repuestos' %}" Style= "font-family: 'Roboto Slab';">Respuetos, insumos</a></li>
                           
                         </ul>
                       
@@ -103,38 +103,38 @@
                       </button>
                     <div id="collapse5" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
                         <ul>
-                          <li>Cotizaciones</li>
-                          <li>Gestion de clientes (CMR)</li>
-                          <li>prospección de Clientes</li>
-                          <li>Fidelizacion y Post Venta</li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Cotizaciones' %}" Style= "font-family: 'Roboto Slab';">Cotizaciones</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'CMR' %}" Style= "font-family: 'Roboto Slab';">Gestion de clientes (CMR)</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'prospección_de_Clientes' %}" Style= "font-family: 'Roboto Slab';">Prospección de Clientes</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Fidelizacion_y_Post_Venta' %}" Style= "font-family: 'Roboto Slab';">Fidelizacion y Post Venta</a></li>
                           
                         </ul>
                       
                     </div></li>
                   <li><button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                    <a class="nav-link dropdown" >Proyectos</a>
+                    <a class="nav-link dropdown" href="{% url 'proyectos' %}">Proyectos</a>
                         
                       </button>
                     <div id="collapse6" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
                         <ul>
-                          <li>Planificación de poryectos</li>
-                          <li>Control de tiempos y costoss</li>
-                          <li>Gestion de valor ganado</li>
-                          <li>Tareas de personal</li>
-                          <li>Control documentario</li>
-                          <li>Gestion de riesgo</li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Planificación_de_poryectos' %}" Style= "font-family: 'Roboto Slab';">Planificación de poryectos</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Control_de_tiempos_y_costos' %}" Style= "font-family: 'Roboto Slab';">Control de tiempos y costos</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Gestion_de_valor_ganado' %}" Style= "font-family: 'Roboto Slab';">Gestion de valor ganado</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Tareas_de_personal' %}" Style= "font-family: 'Roboto Slab';">Tareas de personal</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Control_documentario' %}" Style= "font-family: 'Roboto Slab';">Control documentario</a></li>
+                          <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Gestion_de_riesgo' %}" Style= "font-family: 'Roboto Slab';">Gestion de riesgo</a></li>
                         </ul>
                       
                     </div></li>
                     <li><button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                      <a class="nav-link dropdown" >Seguridad</a>
+                      <a class="nav-link dropdown" href="{% url 'seguridad' %}" >Seguridad</a>
                          
                         </button>
                       <div id="collapse7" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
                           <ul>
-                            <li>Habilitacion de personal</li>
-                            <li>Inspecciones</li>
-                            <li>Inspecciones</li>
+                            <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Habilitacion_de_personal' %}" Style= "font-family: 'Roboto Slab';">Habilitacion de personal</a></li>
+                            <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Inspecciones' %}" Style= "font-family: 'Roboto Slab';">Inspecciones</a></li>
+                            <li><a class="nav-link text-uppercase text-expanded" href="{% url 'Procedimientos' %}" Style= "font-family: 'Roboto Slab';">Procedimientos</a></li>
                           </ul>
                         
                       </div></li>

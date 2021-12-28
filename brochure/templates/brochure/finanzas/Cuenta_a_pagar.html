@@ -4,15 +4,13 @@
 
 {% block content %}
 <section class="page-section clearfix" >
-  <h1 style="color:white;">Administracion</h1>
+  <h1 style="color:white;">Finanzas</h1>
   <nav class="navbar navbar-light" style="background-color: rgba(65, 107, 37, 0.89);">
     <form class="container-fluid justify-content-start">
-      <a class="nav-link text-uppercase text-expanded" href="{% url 'planes' %}" style="color:white;">Planillas</a>
-      <a class="nav-link text-uppercase text-expanded" href="{% url 'firma_electronica' %}" style="color:white;">Firma electronica</a>
-      <a class="nav-link text-uppercase text-expanded" href="{% url 'Evaluacion' %}" style="color:white;">Evaluación y Desempeño</a>
-      <a class="nav-link text-uppercase text-expanded" href="{% url 'Climaorganizacional' %}" style="color:white;">Selección y Capacitacion</a>
-      <a class="nav-link text-uppercase text-expanded" href="{% url 'SeleccionyCapacitacion' %}" style="color:white;">Clima organizacional</a>
-      
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'facturacion' %}" style="color:white;">Facturacion</a>
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'Cuenta_a_pagar' %}" style="color:white;">Cuenta a pagar</a>
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'Cuentas_por_cobrar' %}" style="color:white;">Cuentas por cobrar</a>
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'Reportes_faltante' %}" style="color:white;">Reortes faltantes</a>
     </form>
    </nav>
 
@@ -70,6 +68,4 @@
     </div>
   </div>
 </section>
-
-  
 {% endblock %}

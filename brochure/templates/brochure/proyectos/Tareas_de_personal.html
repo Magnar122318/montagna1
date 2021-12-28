@@ -1,0 +1,24 @@
+{% extends "webapp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+<section class="page-section clearfix" >
+    <h1 style="color:white;">Proyectos</h1>
+    <nav class="navbar navbar-light" style="background-color: rgba(65, 107, 37, 0.89);">
+      <form class="container-fluid justify-content-start">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Planificación_de_poryectos' %}" style="color:white;">Planificación de poryectos</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Control_de_tiempos_y_costos' %}" style="color:white;">Control de tiempos y costos</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Gestion_de_valor_ganado' %}" style="color:white;">Gestion de valor ganado</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Tareas_de_personal' %}" style="color:white;">Tareas de personal</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Control_documentario' %}" style="color:white;">Control documentario</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Gestion_de_riesgo' %}" style="color:white;">Gestion de riesgo</a>                          
+      </form>
+     </nav>
+  
+  </section>
+
+{% endblock %}
