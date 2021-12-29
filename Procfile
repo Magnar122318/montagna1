@@ -1,1 +1,1 @@
-web: web && gunicorn web.wsgy
+web: gunicorn web.wsgy
