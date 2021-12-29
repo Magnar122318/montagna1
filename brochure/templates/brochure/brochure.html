@@ -4,6 +4,21 @@
 
 {% block content %}
 
+<section class="page-section clearfix" >
+    <h1 style="color:white;">Brochure</h1>
+    <nav class="navbar navbar-light" style="background-color: rgba(65, 107, 37, 0.89);">
+      <form class="container-fluid justify-content-start">      
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'administracion' %}" style="color:white;">Administracion</a>                        
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'finanzas' %}" style="color:white;">Finanzas</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'logistica' %}" style="color:white;">Logistica</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'comercial' %}"  style="color:white;">Comercial</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'proyectos' %}" style="color:white;">Proyectos</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'seguridad' %}" style="color:white;">Seguridad</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'ActivosyMantenimientos' %}" style="color:white;">Activos y Mantenimientos</a>
+      </form>
+     </nav>
+  
+  </section>
 
 
 {% endblock %}
