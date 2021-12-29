@@ -1,0 +1,23 @@
+{% extends "webapp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<section class="page-section clearfix" >
+    <h1 style="color:white;">Activos y Mantenimientos</h1>
+    <nav class="navbar navbar-light" style="background-color: rgba(65, 107, 37, 0.89);">
+      <form class="container-fluid justify-content-start">      
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Registro_y_jerarquia' %}" style="color:white;">Registro y jerarquia</a>                        
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Planes_de_mantenimioentos' %}" style="color:white;">Planes de mantenimioentos</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Plan_de_reemplazo' %}" style="color:white;">Plan de reemplazo</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Ordenes_de_trabajo' %}" style="color:white;">Ordenes de trabajo</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Avisos_de_Mantenimiento' %}" style="color:white;">Avisos de Mantenimiento</a>
+        <a class="nav-link text-uppercase text-expanded" href="{% url 'Análisis_de_fallos' %}" style="color:white;">Análisis de fallos</a>
+      </form>
+     </nav>
+  
+  </section>
+
+
+
+{% endblock %}

@@ -37,5 +37,12 @@ urlpatterns = [
     path('Habilitacion_de_personal', views.seguridadHabilitacion_de_personal, name="Habilitacion_de_personal"),
     path('Inspecciones', views.seguridadInspecciones, name="Inspecciones"),
     path('Procedimientos', views.seguridadProcedimientos, name="Procedimientos"),
+    path('ActivosyMantenimientos', views.ActivosyMantenimientos, name="ActivosyMantenimientos"),
+    path('Registro_y_jerarquia', views.ActivosyMantenimientosRegistro_y_jerarquia, name="Registro_y_jerarquia"),
+    path('Planes_de_mantenimioentos', views.ActivosyMantenimientosPlanes_de_mantenimioentos, name="Planes_de_mantenimioentos"),
+    path('Plan_de_reemplazo', views.ActivosyMantenimientosPlan_de_reemplazo, name="Plan_de_reemplazo"),
+    path('Ordenes_de_trabajo', views.ActivosyMantenimientosOrdenes_de_trabajo, name="Ordenes_de_trabajo"),
+    path('Avisos_de_Mantenimiento', views.ActivosyMantenimientosAvisos_de_Mantenimiento, name="Avisos_de_Mantenimiento"),
+    path('Análisis_de_fallos', views.ActivosyMantenimientosAnálisis_de_fallos, name="Análisis_de_fallos"),
 
 ]

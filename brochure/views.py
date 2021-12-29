@@ -157,3 +157,40 @@ def seguridadProcedimientos(request):
     return render(request, "brochure/seguridad/Procedimientos.html")
 
 
+
+
+
+
+def ActivosyMantenimientos(request):
+
+    return render(request, "brochure/ActivosyMantenimientos.html")
+
+
+def ActivosyMantenimientosRegistro_y_jerarquia(request):
+
+    return render(request, "brochure/ActivosyMantenimientos/Registro_y_jerarquia.html")
+
+
+def ActivosyMantenimientosPlanes_de_mantenimioentos(request):
+
+    return render(request, "brochure/ActivosyMantenimientos/Planes_de_mantenimioentos.html")
+
+
+def ActivosyMantenimientosPlan_de_reemplazo(request):
+
+    return render(request, "brochure/ActivosyMantenimientos/Plan_de_reemplazo.html")
+
+
+def ActivosyMantenimientosOrdenes_de_trabajo(request):
+
+    return render(request, "brochure/ActivosyMantenimientos/Ordenes_de_trabajo.html")
+
+
+def ActivosyMantenimientosAvisos_de_Mantenimiento(request):
+
+    return render(request, "brochure/ActivosyMantenimientos/Avisos_de_Mantenimiento.html")
+
+
+def ActivosyMantenimientosAnálisis_de_fallos(request):
+
+    return render(request, "brochure/ActivosyMantenimientos/Análisis_de_fallos.html")
